@@ -303,7 +303,7 @@ const ProfessionIntentHandler = {
 
         let speakOutput = '';
 
-        if (sleepTiming === "1 to 3 hours") {
+        if (sleep_Timing === "1 to 3 hours") {
             speakOutput = 'time is 1 to 3 hours';
             return handlerInput.responseBuilder
                 .speak(speakOutput)
@@ -318,7 +318,7 @@ const ProfessionIntentHandler = {
                 .reprompt(speakOutput)
                 .getResponse();
 
-        } else if (sleepTiming === "3 to 6 hours") {
+        } else if (sleep_Timing === "3 to 6 hours") {
             speakOutput = 'time is 3 to 6 hours';
             return handlerInput.responseBuilder
                 .speak(speakOutput)
